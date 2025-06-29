@@ -8,7 +8,8 @@
       background-color: #ffe6f0;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 1px;
+      padding: 0;
+      margin: 0;
     }
 
     h1 {
@@ -17,15 +18,13 @@
 
     img.banner {
       width: 100%;
-      max-width: 400px;
+      max-width: 200px;
       height: auto;
       object-fit: cover;
       border-radius: 12px;
       border: 4px solid #ff66b2;
-      margin: 20px, auto;
+      margin: 20px auto;
     }
-
-
 
     a.button {
       display: inline-block;
@@ -34,52 +33,68 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      margin-top: 20px;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px;
     }
 
     a.button:hover {
       background-color: #ff3385;
     }
 
-    .navbar {
-      background-color: #ff66b2;
-      overflow: hidden;
-      padding: 10px 0;
+    .top-buttons {
+      background-color: #ffd9e6;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 0;
     }
 
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 2px 20px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    .navbar a:hover {
-      background-color: #ff3385;
-      border-radius: 5px;
-    }
 
     ::selection {
       background: #ffb6c1;
       color: white;
     }
+
+    p {
+      color: #cc0052;
+      font-weight: bold;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px;
+    }
   </style>
 </head>
 <body>
 
-  <div class="navbar">
-    <a href="index.html">🏠 الصفحة الرئيسية</a>
-    <a href="care.html">💅 العناية الشخصية</a>
-    <a href="page2.html">🎁 العروض</a>
+  <div class="top-buttons">
+    <a href="weekly.html" class="button">💯 عروض أسبوعية</a>
+    <a href="catalog.html" class="button">📄 الكتالوج</a>
+    <a href="Activations.html" class="button">تنشيط 🧗🏻‍♂</a>
+    <a href="program.html" class="button">برنامج</a>
+    <a href="guidepoints.html" class="button">هداية النقاط</a>
+    <a href="newmemberwelcomeprogram.html" class="button">برنامج الترحيب بالعضو الجديد</a>
+    <!-- <a href="rewardstable.html" class="button">جدول المكافأت</a> -->
+
   </div>
 
   <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrPQlCBiint2AcYf9qXaQY166HvJjnA3lxQ&s" alt="Banner Image">
 
-  <h1>Welcome to MyWay</h1>
-  
+  <h2 style="color:#cc0052;">اكتشف منتجاتك المفضلة من ماي واي</h2>
+
+
   <a class="button" href="page2.html">اكتشف العروض</a>
+
+  <h3 style="color: #cc0052; font-size: 45px; margin-bottom: 10px;">لتسجيل العضوية اضغط هنا</h3>
+  <a href="https://forms.gle/LNfopCz5XtZFgoxt6" target="_blank" class="button">📋 اضغط للتسجيل</a>
+
 
 </body>
 </html>
